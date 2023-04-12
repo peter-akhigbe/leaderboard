@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(224, 223, 223);
+  padding: 3vw;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 5vw;
+}
+
+.scores-container {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+}
+
+.headline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  background-color: white;
+  margin-left: auto;
+  border: solid 3px black;
+}
+
+ul {
+  list-style: none;
+  border: solid 3px black;
+  background-color: white;
+  padding: 0;
+}
+
+li {
+  background-color: white;
+  padding: 5px;
+}
+
+.odd {
+  background-color: rgb(224, 223, 223);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 20vw;
+}
+
+input {
+  padding: 5px;
+  border: solid 3px black;
+}
