@@ -1,11 +1,11 @@
 import './style.css';
 
-const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games';
-
 const gameID = 'TqB6XYxl89cR2vfmQY7m';
+const api = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games';
+const url = `${api}/${gameID}/scores/`;
 
 const getScores = async () => {
-  const response = await fetch(`${url}/${gameID}/scores/`);
+  const response = await fetch(url);
   const data = await response.json();
   const array = await data.result;
 
@@ -59,7 +59,7 @@ const submit = () => {
     if ((user) && (score <= 100) && (score >= 0)) {
       const data = { user, score };
 
-      fetch(`${url}/${gameID}/scores/`, {
+      fetch(url, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
