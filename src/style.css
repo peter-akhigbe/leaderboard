@@ -1,9 +1,10 @@
 * {
   box-sizing: border-box;
+  color: white;
+  background-color: black;
 }
 
 body {
-  background-color: rgb(224, 223, 223);
   padding: 3vw;
 }
 
@@ -32,26 +33,27 @@ h1 {
 button {
   width: 100px;
   height: 30px;
-  background-color: white;
   margin-left: auto;
-  border: solid 3px black;
+  border: solid 3px white;
   cursor: pointer;
 }
 
 ul {
   list-style: none;
-  border: solid 3px black;
-  background-color: white;
+  border: solid 3px white;
   padding: 0;
 }
 
 li {
-  background-color: white;
   padding: 5px;
+  background-color: grey;
+  color: black;
 }
 
 .odd {
-  background-color: rgb(224, 223, 223);
+  /* background-color: rgb(229, 177, 177); */
+  background-color: black;
+  color: white;
 }
 
 form {
@@ -63,5 +65,5 @@ form {
 
 input {
   padding: 5px;
-  border: solid 3px black;
+  border: solid 3px white;
 }
