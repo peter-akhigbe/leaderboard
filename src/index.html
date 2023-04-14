@@ -12,16 +12,16 @@
     <div class="scores-container">
       <div class="headline">
         <h2>Recent Scores</h2>
-        <button>Refresh</button>
+        <button class="refresh">Refresh</button>
       </div>
 
       <ul class="score-box"></ul>
     </div>
 
-    <form class="form" action="" autocomplete="off">
+    <form class="form" autocomplete="off">
       <h2>Add Your Score</h2>
-      <input class="name" name="name" placeholder="Your name" type="text" required>
-      <input class="score" name="score" placeholder="Your score" type="number" min="0" max="100" required>
+      <input class="name-input" name="user" placeholder="Your name" type="text" required>
+      <input class="score-input" name="score" placeholder="Your score" type="number" min="0" max="100" required>
       <button class="submit" type="submit">Submit</button>
     </form>
   </div>
